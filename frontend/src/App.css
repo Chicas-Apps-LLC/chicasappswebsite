@@ -1,0 +1,180 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0;            /* Remove padding */
+  margin: 0;             /* Remove margins */
+  display: flex;         /* Align items horizontally */
+  background-color: #333;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 20px;    /* Space between menu items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Remove underline */
+  color: white;          /* Set link color */
+  font-weight: bold;     /* Make the text bold */
+  padding: 25px;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #007BFF;        /* Change color on hover */
+}
+/* Header Section */
+header {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+header button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+/* Flexbox for sections with images */
+.left-image-section, .right-image-section{
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  text-align: left;
+}
+
+.left-image-section img, .right-image-section img {
+  width: 450px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.left-image-section {
+  justify-content: flex-start;
+}
+
+.right-image-section {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.left-image-section .content, .right-image-section .content {
+  max-width: 600px;
+}
+
+/* Services, Approach, and About sections */
+#services, #approach, #about {
+  background-color: #f9f9f9;
+}
+
+#consultation {
+  text-align: center;
+  padding: 50px;
+}
+
+#consultation button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#consultation button:hover {
+  background-color: #0056b3;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#services, #approach, #about, #consultation {
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+section p, section ul {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 10px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
